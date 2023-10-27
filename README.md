@@ -22,7 +22,7 @@ OpenAI API (you will need an API key from OpenAI)
 We are not accepting contributions to this project at this time. However, if you find any bugs or issues, please feel free to open an issue in the repository, and we will address it as soon as possible.
 
 ## License
-TThis project is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License - see the LICENSE.md file for details.
+TThis project is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgements
 We would like to thank the Japanese Association for Acute Medicine for their support and collaboration on this project.
