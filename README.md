@@ -1,4 +1,4 @@
-# Emergency Room Visit Navigation Test for ChatGPT by the Japanese Association for Acute Medicine
+# Emergency Room Visit Navigation Test for ChatGPT by the Japanese Association for Acute Medicine Technology Committee
 
 ## Overview
 This repository contains code and data used by the Japanese Association for Acute Medicine Technology Committee to test the robustness of ChatGPT answers for determining whether a person needs to visit emergency rooms.
