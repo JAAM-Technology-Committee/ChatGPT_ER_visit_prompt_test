@@ -60,6 +60,9 @@ fig2_1
 ggsave(paste0(output_dir, 'fig2-1.png'), fig2_1, 
        width = 6, height = 2.5, dpi=300)
 
+ggsave(paste0(output_dir, 'fig2-1.tiff'), fig2_1, 
+       width = 6, height = 2.5, dpi=300)
+
 fig2_2 <- ggplot(data.green, aes(x = Percentage, y = Category, fill = Subcategory)) +
   geom_bar(stat = "identity", color = "black") +
   scale_fill_manual(values = c("#5D9C59", "#C7E8CA"),
@@ -80,4 +83,6 @@ fig2_2 <- ggplot(data.green, aes(x = Percentage, y = Category, fill = Subcategor
 
 fig2_2
 ggsave(paste0(output_dir, 'fig2-2.png'), fig2_2,
+       width = 6, height = 2.5, dpi=300)
+ggsave(paste0(output_dir, 'fig2-2.tiff'), fig2_2,
        width = 6, height = 2.5, dpi=300)
