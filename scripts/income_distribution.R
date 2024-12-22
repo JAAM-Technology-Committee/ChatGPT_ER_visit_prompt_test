@@ -31,3 +31,6 @@ income_hist_plot
 
 ggsave(paste0(output_dir, 'fig_sup_1.png'), income_hist_plot, 
        width = 8, height = 4, dpi=300)
+
+ggsave(paste0(output_dir, 'fig_sup_1.tiff'), income_hist_plot, 
+       width = 8, height = 4, dpi=300)
