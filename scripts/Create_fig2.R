@@ -121,7 +121,7 @@ data.green.revise <- data.green.revise %>%
   mutate(Percentage = Value / sum(Value) * 100)
 
 # Plot
-fig2_3 <- ggplot(data.red.revise, aes(x = Percentage, y = Category, fill = Subcategory)) +
+fig2_1_revision <- ggplot(data.red.revise, aes(x = Percentage, y = Category, fill = Subcategory)) +
   geom_bar(stat = "identity", color = "black") +
   scale_fill_manual(values = c("#D0312D", "#E68F8C"),
                     breaks = c("Correct", "Incorrect")) +
@@ -139,14 +139,14 @@ fig2_3 <- ggplot(data.red.revise, aes(x = Percentage, y = Category, fill = Subca
         legend.title = element_text(size = 10)) +
   guides(fill = guide_legend(title = NULL))
 
-fig2_3
-ggsave(paste0(output_dir, 'fig2-3.png'), fig2_3, 
+fig2_1_revision
+ggsave(paste0(output_dir, 'fig2-1_revision.png'), fig2_1_revision, 
        width = 6, height = 3.3, dpi=300)
 
-ggsave(paste0(output_dir, 'fig2-3.tiff'), fig2_3, 
-       width = 6, height = 3.3, dpi=300)
+ggsave(paste0(output_dir, 'fig2-1_revision.tiff'), fig2_1_revision, 
+       width = 3.5, height = 2, dpi=600)
 
-fig2_4 <- ggplot(data.green.revise, aes(x = Percentage, y = Category, fill = Subcategory)) +
+fig2_2_revision <- ggplot(data.green.revise, aes(x = Percentage, y = Category, fill = Subcategory)) +
   geom_bar(stat = "identity", color = "black") +
   scale_fill_manual(values = c("#5D9C59", "#C7E8CA"),
                     breaks = c("Correct", "Incorrect")) +
@@ -164,8 +164,8 @@ fig2_4 <- ggplot(data.green.revise, aes(x = Percentage, y = Category, fill = Sub
         legend.title = element_text(size = 10)) +
   guides(fill = guide_legend(title = NULL))
 
-fig2_4
-ggsave(paste0(output_dir, 'fig2-4.png'), fig2_4,
+fig2_2_revision
+ggsave(paste0(output_dir, 'fig2-2_revision.png'), fig2_2_revision,
        width = 6, height = 3.3, dpi=300)
-ggsave(paste0(output_dir, 'fig2-4.tiff'), fig2_4,
-       width = 6, height = 3.3, dpi=300)
+ggsave(paste0(output_dir, 'fig2-2_revision.tiff'), fig2_2_revision,
+       width = 3.5, height = 2, dpi=600)
