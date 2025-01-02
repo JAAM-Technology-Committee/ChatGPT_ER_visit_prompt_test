@@ -5,8 +5,8 @@ This repository contains code and data used by the Japanese Association for Acut
 
 ## Repository Structure
 - `data`: Directory containing excel files with all the prompts/questions. The prompts are extracted from "Emergency Severity Assessment Protocol Ver. 3: Emergency Consultation Guide (Home Self-Judgment)," provided by the Fire and Disaster Management Agency of the Japan Ministry of Internal Affairs and Communications. The prompts are modified to avoid using medical technical terms.
-- `scripts`: Directory containing a Jupyter Notebook that runs the OpenAI API to obtain ChatGPT's responses to the prompts and an R script to create figure 2.
-- `output`: Directory where an excel file with all the questions, answers, and the time taken to answer each question are stored. The png and tiff files of figure 2 are also saved.
+- `scripts`: Directory containing Python Jupyter Notebook files and R scripts. Python is used to run the OpenAI API to obtain ChatGPT's responses to the prompts and calculate weights for standardization to the national income distribution. R scripts are used to create figure 2 and figure 3.
+- `output`: Directory where an excel file with all the questions, answers, and the time taken to answer each question are stored. The png and tiff files of figure 2 and figure 3 are also saved.
 
 ## How to Run the Test
 1. Clone this repository to your local machine.
@@ -17,6 +17,7 @@ This repository contains code and data used by the Japanese Association for Acut
 - Python 3
 - Jupyter Notebook
 - OpenAI API (you will need an API key from OpenAI)
+- R (version 4.3.1)
 
 ## Contributing
 We are not accepting contributions to this project at this time. However, if you find any bugs or issues, please feel free to open an issue in the repository, and we will address it as soon as possible.
